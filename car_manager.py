@@ -10,6 +10,7 @@ class CarGen:
 
     def __init__(self):
         self.cars = []
+        self.car_speed = STARTING_MOVE_DISTANCE
 
     def spawn_car(self):
         car_gen = random.randint(1, 6)
@@ -25,4 +26,7 @@ class CarGen:
 
     def move_car(self):
         for car in self.cars:
-            car.fd(STARTING_MOVE_DISTANCE)
+            car.fd(self.car_speed)
+
+    def level_up(self):
+        self.car_speed += MOVE_INCREMENT

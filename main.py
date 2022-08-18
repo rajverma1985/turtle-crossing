@@ -14,13 +14,17 @@ car = CarGen()
 screen.listen()
 screen.onkey(new_player.move_up, 'Up')
 
-
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
     car.spawn_car()
     car.move_car()
+    for cars in car.cars:
+        if new_player.distance(cars) < 20:
+            game_is_on = False
+    if new_player.top():
+        new_player.go_to_start()
+        car.level_up()
 
-
-
+screen.exitonclick()
