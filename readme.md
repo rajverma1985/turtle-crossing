@@ -10,4 +10,5 @@ right edge of the screen to the left edge. -- DONE!
 position and the player levels up. On the next level, the car speed increases. -- DONE!
 
 4. When the turtle collides with a car, it's game over and everything stops. -- DONE
-5. Do the scoring and game over logic
+5. Do the scoring and game over logic. -- DONE!
+6. Add logic for restarting and exiting the game.

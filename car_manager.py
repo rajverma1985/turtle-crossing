@@ -28,5 +28,5 @@ class CarGen:
         for car in self.cars:
             car.fd(self.car_speed)
 
-    def level_up(self):
-        self.car_speed += MOVE_INCREMENT
+    def increase_speed(self):
+        self.car_speed += 0.5 * MOVE_INCREMENT
