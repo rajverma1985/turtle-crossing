@@ -12,3 +12,10 @@ position and the player levels up. On the next level, the car speed increases. -
 4. When the turtle collides with a car, it's game over and everything stops. -- DONE
 5. Do the scoring and game over logic. -- DONE!
 6. Add logic for restarting and exiting the game.
+
+
+TO modify the source and build you own:
+1. Install pyinstaller using "pip install pyinstaller"
+2. and Run pyinstaller --onefile main/main.py
+3. The build and dist folders will have the game.
+4. The builds are not tested for Windows & its subsystems.
