@@ -8,7 +8,7 @@ class Scoreboard(Turtle):
         super().__init__()
         self.score = 0
         self.penup()
-        self.goto(140, 270)
+        self.goto(130, 270)
         self.hideturtle()
         self.update_score()
 
@@ -16,7 +16,7 @@ class Scoreboard(Turtle):
         self.write(f"Score: {self.score}", font=FONT)
 
     def keep_score(self):
-        self.score += 10 + self.score * 0.5
+        self.score += 10 + self.score
         self.clear()
         self.update_score()
 
